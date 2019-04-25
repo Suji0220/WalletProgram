@@ -2,8 +2,35 @@ public class Main {
 
     public static void main(String[] args) {
 
-        Wallet wallet = new Wallet();
-        int totalMoney = wallet.addMoney(1000);
+        Wallet payTMWallet = new PayTM();
+
+
+        Wallet phonePe = new PhonePe();
+
+        payTMWallet.addMoney(400);
+        phonePe.addMoney(700);
+
+        payTMWallet.removeMoney(400);
+        phonePe.removeMoney(500);
+
+        payTMWallet.checkBalance();
+        phonePe.checkBalance();
+
+        payTMWallet.overDraw();
+        phonePe.overDraw();
+
+        payTMWallet.cashBack();
+        phonePe.cashBack();
+
+
+
+
+
+
+
+
+
+        /*int totalMoney = wallet.addMoney(1000);
         System.out.println("The total money is wallet is: " + totalMoney);
 
         wallet.removeMoney(300);
@@ -15,7 +42,7 @@ public class Main {
 
         wallet.checkBalance();
 
-        wallet.overDraw();
+        wallet.overDraw();*/
 
 
 
