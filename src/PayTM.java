@@ -9,8 +9,8 @@ public class PayTM extends Wallet {
     public void removeMoney(int amount)
     {
         if(money >= amount){
-            money = money - amount;
-            System.out.println("The remaining amount for PayTM: " + money);
+            balaceAmount = money - amount;
+            System.out.println("The remaining amount for PayTM: " + balaceAmount);
         }
         else
             System.out.println("No Sufficient balance");
@@ -18,11 +18,11 @@ public class PayTM extends Wallet {
 
     public void cashBack()
     {
-        if (money >= 300)
-            System.out.println("Cash back is done successfully to 7%");
+        if (balaceAmount >= 300)
+            System.out.println("PhonePay pays cashback of 17%");
 
         else
-            System.out.println("No discount");
+            System.out.println("No cashback");
     }
 
 

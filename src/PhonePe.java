@@ -1,5 +1,6 @@
 public class PhonePe extends Wallet {
 
+
     public  void addMoney(int amount)
     {
         money = money + amount;
@@ -8,8 +9,8 @@ public class PhonePe extends Wallet {
     public void removeMoney(int amount)
     {
         if(money >= amount){
-            money = money - amount;
-            System.out.println("The remaining amount for PhonePe is: " + money);
+            balaceAmount = money - amount;
+            System.out.println("The remaining amount for PhonePe is: " + balaceAmount);
         }
         else
             System.out.println("No Sufficient balance");
@@ -17,11 +18,11 @@ public class PhonePe extends Wallet {
 
     public void cashBack()
     {
-        if (money >= 500)
-        System.out.println("Cash back is done successfully to 5%");
+        if (balaceAmount >= 100)
+        System.out.println("PhonePay pays cashback of 10%");
 
         else
-            System.out.println("No discount");
+            System.out.println("No cashback");
     }
 
 }
